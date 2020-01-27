@@ -10,7 +10,7 @@ Before you submit the different parts of your lab, make sure that your project f
 
 - [X] Fork and clone the 1md034_students repository
 
-
+   
 ## 02 HTML
 
 - [ ] Ensure the website loads when opening http://localhost:3000/
