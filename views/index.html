@@ -65,7 +65,7 @@
     <h3>Delivery Information:</h3>
     <p>
       <label for="firstname">Full name</label><br>
-      <input type="text" id="firstname" name="fn" required="required" placeholder="First- and last name" />
+      <input type="text" id="full name" name="fn" required="required" placeholder="First- and last name" />
     </p>
     <p>
       <label for="lastname">E-mail</label><br>
@@ -73,13 +73,20 @@
     </p>
     <p>
       <label for="lastname">Street</label><br>
-      <input type="email" id="email" name="em" required="required" placeholder="Street name" />
+      <input type="text" id="street" name="s" required="required" placeholder="Street name" />
     </p>
     <p>
       <label for="lastname">House</label><br>
-      <input type="email" id="email" name="em" required="required" placeholder="House number" />
+      <input type="number" id="house" name="h" required="required" placeholder="House number" />
     </p>
-    <footer>
-    </footer>
+<p>
+    <label for="recipient">Payment Options</label><br />
+    <select id="recipient" name="rcp">
+        <option>Visa Card</option>
+        <option>Swish</option>
+        <option>Mastercard</option>
+        <option>Klarna</option>
+    </select>
+</p>
   </body>
 </html>
