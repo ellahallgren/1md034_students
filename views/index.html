@@ -6,7 +6,7 @@
   </head>
   <body>
     <main>
-      <h1>Welcome to BurgerOnline</h1>
+      <h1>Welcome to Ella's Burgerhouse</h1>
     </main>
     <section>
       <h2>Select Burger</h2>
@@ -16,52 +16,54 @@
     </section>
     <section>
       <table>
-       <thead>
-        <tr>
+        <thead>
+          <tr>
             <th>Nasty Burger</th>
             <th>Nice Burger</th>
             <th>Namnam Burger</th>
-        </tr>
-       </thead>
-           <tbody>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td> <img width=100% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s"></td>
             <td> <img width=100% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s"></td>
             <td> <img width=100% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s"></td>
-        </tr>
-           </tbody>
-       <tfoot>
-         <tr>
-           <td>
-             <ul>
-               <li>meat</li>
-               <li>bread</li>
-               <li>cheese</li>
-               <li>onion</li>
-               <li>lactose free, contains gluten</li>
-             </ul>            
-           </td>
-           <td>
-             <li>meat</li>
-             <li>bread</li>
-             <li>cheese</li>
-             <li>tomato</li>
-             <li>lactose and gluten free</li>             
-           </td>
-           <td>
-             <li>meat</li>
-             <li>bread</li>
-             <li>cheese</li>
-             <li>onion</li>
-             <li>tomato</li>             
-             <li>contains gluten and lactose</li>             
-           </td>
-         </tr>
-       </tfoot>     
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <ul>
+                <li>meat</li>
+                <li>bread</li>
+                <li>cheese</li>
+                <li>onion</li>
+                <li>lactose free, contains gluten</li>
+              </ul>            
+            </td>
+            <td>
+              <li>meat</li>
+              <li>bread</li>
+              <li>cheese</li>
+              <li>tomato</li>
+              <li>lactose and gluten free</li>             
+            </td>
+            <td>
+              <li>meat</li>
+              <li>bread</li>
+              <li>cheese</li>
+              <li>onion</li>
+              <li>tomato</li>             
+              <li>contains gluten and lactose</li>             
+            </td>
+          </tr>
+        </tfoot>     
       </table>      
     </section>
     <h2>Customer Information</h2>
     <h4>this is where you provide neccecary information</h4>
+    <section id="contact">
+    <form>
     <h3>Delivery Information:</h3>
     <p>
       <label for="firstname">Full name</label><br>
@@ -79,14 +81,35 @@
       <label for="lastname">House</label><br>
       <input type="number" id="house" name="h" required="required" placeholder="House number" />
     </p>
-<p>
-    <label for="recipient">Payment Options</label><br />
-    <select id="recipient" name="rcp">
+    <p>
+      <label for="recipient">Payment Options</label><br />
+      <select id="recipient" name="rcp">
         <option>Visa Card</option>
         <option>Swish</option>
         <option>Mastercard</option>
         <option>Klarna</option>
-    </select>
-</p>
+      </select>
+    </p>
+    <h3>Gender</h3>
+    <p>
+      
+      <input type="radio" id="female" name="gender" required="required" />
+      <label for="lastname">Female</label><br>
+      <input type="radio" id="male" name="gender" required="required" />
+      <label for="lastname">Male</label><br>
+      <input type="radio" id="non-binary" name="gender" required="required" />
+      <label for="lastname">Non-binary</label><br>
+      <input type="radio" id="undisclosed" name="gender" required="required" checked="checked" />
+      <label for="lastname">Undisclosed</label><br>
+      
+    </p>
+    </form>
+    </section>
+    <p>
+      <button type="submit"><img align="left" width=15% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQSlUIwLilpL6MJ3cOT-mYMpcQjtYa_A0SbpA6YsvI0YIta-M&sx" /> <h3>Place my order</h3></button>
+    </p>
+    <hr>
+      <footer> &COPY; 2020 Ella's Burgerhouse inc. </footer>
   </body>
+
 </html>
