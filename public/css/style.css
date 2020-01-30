@@ -12,3 +12,13 @@ body {
     color: white;
     background-color: black;
 }
+
+input[type="radio"] {
+    height: .7em;
+    width: .7em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
