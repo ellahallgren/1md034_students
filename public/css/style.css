@@ -1,6 +1,7 @@
 body {
     font-family: "Times New Roman";
     font-size: 1.2em;
+    margin: 0 auto;
 }
 
 #bold {
@@ -21,4 +22,13 @@ input[type="radio"] {
 button:hover {
     cursor: pointer;
     background-color: green;
+}
+
+section:empty {
+    background: magenta;
+}
+
+.burgers {
+    width: 85%;
+    margin: 0 auto;
 }
