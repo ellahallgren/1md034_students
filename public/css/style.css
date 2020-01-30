@@ -21,7 +21,11 @@ input[type="radio"] {
 
 button:hover {
     cursor: pointer;
-    background-color: green;
+    background-color: green;    
+}
+
+button {
+    margin: 1%
 }
 
 section:empty {
@@ -31,4 +35,8 @@ section:empty {
 .burgers {
     width: 85%;
     margin: 0 auto;
+}
+
+section {
+    margin: 1%;
 }
