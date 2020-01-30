@@ -2,3 +2,7 @@ body {
     font-family: "Times New Roman";
     font-size: 1.2em;
 }
+
+#bold {
+    font-weight: bold;
+}
