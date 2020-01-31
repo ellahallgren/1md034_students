@@ -5,10 +5,24 @@ body {
 }
 figure {
     margin: 1%;
+    height: 17.4em;
+    overflow: hidden;
 }
 
 figure img {
-    opacity: 0.8;
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+
+   
+}
+
+figure h1 {
+    position: absolute;
+    z-index: 1;
+    padding-top: 7.5%;
+    font-size: 3em;
+    padding-left: 20%;
 }
 
 #bold {
