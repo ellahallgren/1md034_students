@@ -12,6 +12,8 @@ body {
 #burger {
     color: white;
     background-color: black;
+    border: dashed;
+    padding: 1%;
 }
 
 input[type="radio"] {
@@ -39,4 +41,9 @@ section:empty {
 
 section {
     margin: 1%;
+}
+
+#contact {
+    border: dashed;
+    padding: 1%;
 }
