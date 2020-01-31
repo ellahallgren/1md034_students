@@ -68,3 +68,9 @@ section {
     border: dashed;
     padding: 1%;
 }
+
+.grid {
+     display: grid;
+     grid-gap: 2px;
+     grid-template-columns: 400px 400px 400px;
+}
