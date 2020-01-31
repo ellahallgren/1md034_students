@@ -3,6 +3,13 @@ body {
     font-size: 1.2em;
     margin: 0 auto;
 }
+figure {
+    margin: 1%;
+}
+
+figure img {
+    opacity: 0.8;
+}
 
 #bold {
     font-weight: bold;
