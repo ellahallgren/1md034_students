@@ -1,30 +1,32 @@
 <!DOCTYPE html>
+<script src="https://vuejs.org/js/vue.js"></script>
 <html lang="en">
   <head>
+    <script src="js/js_script.js"></script>
+    <script src="js/vue_script.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Ella's Burgerhouse</title>
 
     <meta charset="utf-8"/>
   </head>
   <body>
-    <main>
+    <header>
       <figure>
       <h1>Welcome to Ella's Burgerhouse</h1>
       <img width=100% src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDYuA5CEEyIauGsMtK-mEnTrRsOQN09brTXZhHfiiqYNoKnt9g">
       </figure>
-    </main>
+    </header>
+    <main>
     <section id="burger">
       <h2>Select Burger</h2>
       <h4>this is where you execute burger selection</h4>
 
 
-      <div class="grid">
+      <div class="wrapper">
+      <div class="box a">
         <div><h2>Nasty Burger</h2></div>
-        <div><h2>Nice Burger</h2></div>
-        <div><h2>Namnam Burger</h2></div>
-        <div> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s"></div>
-        <div> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s"></div>
-        <div> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s"></div>
+        <div> <img width=100% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s"></div>
         <div>
           <ul>
             <li>wuhan imported meat</li>
@@ -34,6 +36,10 @@
             <li>contains <span id="bold">gluten</span></li>
           </ul>
         </div>
+      </div>
+      <div class="box b">
+        <div><h2>Nice Burger</h2></div>
+        <div> <img width=80% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s"></div>
         <div>
           <ul>
             <li>meat</li>
@@ -42,6 +48,10 @@
             <li>tomato</li>         
           </ul>
         </div>
+      </div>
+      <div class="box c">
+        <div><h2>Namnam Burger</h2></div>      
+        <div> <img width=80% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s"></div>   
         <div>
           <ul>
             <li>meat</li>
@@ -53,59 +63,7 @@
           </ul>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-      
-    <!--  <table class="burgers">
-        <thead>
-          <tr>
-            <th>Nasty Burger</th>
-            <th>Nice Burger</th>
-            <th>Namnam Burger</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s"></td>
-            <td> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s"></td>
-            <td> <img width=80% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s"></td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>
-              <ul>
-                <li>wuhan imported meat</li>
-                <li>bread</li>
-                <li>cheese</li>
-                <li>onion</li>
-                <li>contains <span id="bold">gluten</span></li>
-              </ul>            
-            </td>
-            <td>
-              <li>meat</li>
-              <li>bread</li>
-              <li>cheese</li>
-              <li>tomato</li>           
-            </td>
-            <td>
-              <li>meat</li>
-              <li>bread</li>
-              <li>cheese</li>
-              <li>onion</li>
-              <li>tomato</li>             
-              <li>contains <span id="bold">gluten</span> and <span id="bold">lactose</span></li>             
-            </td>
-          </tr>
-        </tfoot>     
-      </table>  -->    
+      </div>
     </section>
     <section id="contact">
       <h2>Customer Information</h2>
@@ -151,11 +109,12 @@
           
         </p>
       </form>
+      <p>
+        <button type="submit"><img align="left" width=15% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQSlUIwLilpL6MJ3cOT-mYMpcQjtYa_A0SbpA6YsvI0YIta-M&sx" /> <h3>Place my order</h3></button>
+      </p>
+      <hr>
     </section>
-    <p>
-      <button type="submit"><img align="left" width=15% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQSlUIwLilpL6MJ3cOT-mYMpcQjtYa_A0SbpA6YsvI0YIta-M&sx" /> <h3>Place my order</h3></button>
-    </p>
-    <hr>
+    </main>
     <footer> &COPY; 2020 Ella's Burgerhouse inc. </footer>
   </body>
 
