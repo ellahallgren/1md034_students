@@ -1,4 +1,4 @@
-var menuItem = function(name, kCal, pic, gluten, lactose) {
+/*var menuItem = function(name, kCal, pic, gluten, lactose) {
     this.name = name;
     this.kCal = kCal;
     this.pic = pic;
@@ -20,6 +20,7 @@ let NormalBurger = new menuItem("Normal Burger", "1400 calories", "https://encry
 
 let row = document.getElementsByClassName("column")
 var menu = [NastyBurger, NiceBurger, NamnamBurger, NextBurger, NormalBurger];
+*/
 /*
 for (var x = 0; x<row.length; x++)
 {
@@ -87,11 +88,12 @@ document.getElementById("b3").innerHTML = NamnamBurger.name;
 document.getElementById("b4").innerHTML = NextBurger.name;
 document.getElementById("b5").innerHTML = NormalBurger.name;
 */
+/*
 function calInfo(burger) {
     
     return "burger: " + burger.name + "\nkCal: " + burger.kCal;
 };
-
+*/
 /*const mat = new Vue({
 el: '#myID',
 data: {

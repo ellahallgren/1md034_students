@@ -13,7 +13,7 @@
       const box = new Vue ({
       el: '#burgers',
       data: {
-          food:menu
+          food:food
       },
       });
 
