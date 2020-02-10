@@ -2,8 +2,8 @@
 <script src="https://vuejs.org/js/vue.js"></script>
 <html lang="en">
   <head>
-    <script src="js/js_script.js"></script>
-    <script src="js/vue_script.js"></script>
+    <script src="js/js_script.js" defer></script>
+    <script src="js/vue_script.js" defer></script>
     <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Ella's Burgerhouse</title>
@@ -23,6 +23,33 @@
       <h4>this is where you execute burger selection</h4>
 
 
+
+      <div id="burgers" class="wrapper">
+        <div v-for="(x, index) in food">
+          <h4> {{ x.name }} </h4>
+          <img :src="x.pic" width="250" height="175">
+          <ul>
+            <li> {{x.kCal}} </li>
+            <li v-if="x.lactose"> Contains lactose </li>
+            <li v-if="x.gluten"> Contains gluten </li> 
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+    <!--  <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>-->
+
+
+
+      
+<!--
       <div class="wrapper">
       <div class="box a">
         <div><h2>Nasty Burger</h2></div>
@@ -62,8 +89,8 @@
             <li>contains <span id="bold">gluten</span> and <span id="bold">lactose</span></li>    
           </ul>
         </div>
-      </div>
-      </div>
+      </div> 
+      </div> -->
     </section>
     <section id="contact">
       <h2>Customer Information</h2>

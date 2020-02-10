@@ -7,20 +7,59 @@ var menuItem = function(name, kCal, pic, gluten, lactose) {
 };
 
 
-let NastyBurger = new menuItem("Nasty Burger", 1300, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s", true, false);
+let NastyBurger = new menuItem("Nasty Burger", "1300 calories", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s", true, false);
 
 
-let NiceBurger = new menuItem("Nice Burger", 2000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s", false, false);
+let NiceBurger = new menuItem("Nice Burger", "2000 calories", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s", false, false);
 
-let NamnamBurger = new menuItem("Namnam Burger", 1500, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s", true, true);
+let NamnamBurger = new menuItem("Namnam Burger", "1500 calories", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s", true, true);
 
-let NextBurger = new menuItem("Next Burger", 2000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s", false, false);
+let NextBurger = new menuItem("Next Burger", "2000 calories", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s", false, false);
 
-let NormalBurger = new menuItem("Normal Burger", 1400, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s", true, true);
+let NormalBurger = new menuItem("Normal Burger", "1400 calories", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s", true, true);
 
+let row = document.getElementsByClassName("column")
 var menu = [NastyBurger, NiceBurger, NamnamBurger, NextBurger, NormalBurger];
+/*
+for (var x = 0; x<row.length; x++)
+{
+    let title = document.createElement('h3');
+    let nameTitle = document.createTextNode(menu[x].name);
+    title.appendChild(nameTitle);
+    row[x].appendChild(title);
+    
+    let img = document.createElement('img');
+    img.src = menu[x].pic;
+    img.height = 200;
+    img.width = 200;
+    row[x].appendChild(img);
+
+    let listItem = document.createElement('ul');
+    let kcal = document.createElement('li');
+    let kcalText = document.createTextNode(menu[x].kCal); 
+    let gluten = document.createElement('li');
+    let glutenText = document.createTextNode("Contains gluten");
+    let lactose = document.createElement('li');
+    let lactoseText = document.createTextNode("Contains lactose");
+
+    kcal.appendChild(kcalText);
+    listItem.appendChild(kcal);
+    if(menu[x].gluten) {
+        gluten.appendChild(glutenText);
+        listItem.appendChild(gluten);
+    }
+    if(menu[x].lactose) {
+        lactose.appendChild(lactoseText);
+        listItem.appendChild(lactose);
+    }
+
+    row[x].appendChild(listItem);
+    
+}
+*/
+
 /*var ids = ["b1", "b2", "b3", "b4", "b5"];
-for (var x = 0; x < 5; x++)
+for (var x = 0; x < row.length; x++)
 {
 	document.getElementById(ids[x]).innerHTML = menu[x].name;
   if(menu[x].lactose == true) {
@@ -38,7 +77,8 @@ for (var x = 0; x < 5; x++)
   id.appendChild(btn);
   }
 
-}*/
+  }*/
+
 
 
 /*document.getElementById("b1").innerHTML = NastyBurger.name;
@@ -52,10 +92,10 @@ function calInfo(burger) {
     return "burger: " + burger.name + "\nkCal: " + burger.kCal;
 };
 
-const mat = new Vue({
+/*const mat = new Vue({
 el: '#myID',
 data: {
 menu: menu
 },
 
-})
+})*/

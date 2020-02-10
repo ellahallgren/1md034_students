@@ -1,4 +1,4 @@
-<div id="myID">
+/*<div id="myID">
 <div v-for = "(x,index) in menu">
 <h4>
 {{ x.name }}
@@ -7,8 +7,15 @@
 <li> {{ x.kCal }} </li>
 </ul>
 </div>
-</div>   
+</div>  */ 
 
+
+      const box = new Vue ({
+      el: '#burgers',
+      data: {
+          food:menu
+      },
+      });
 
   
    /* <div>
