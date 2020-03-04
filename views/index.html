@@ -18,7 +18,7 @@
       <img width=100% src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDYuA5CEEyIauGsMtK-mEnTrRsOQN09brTXZhHfiiqYNoKnt9g">
       </figure>
     </header>
-    <main>
+    <main id="site">
     <section id="burger">
       <h2>Select Burger</h2>
       <h4>this is where you execute burger selection</h4>
@@ -27,71 +27,17 @@
 
       <div id="burgers" class="wrapper">
         <div v-for="(x, index) in food">
-          <h4> {{ x.name }} </h4>
+          <h4> {{ x.name }} </h4>         
           <img :src="x.pic" width="250" height="175">
           <ul>
             <li> {{x.kCal}} </li>
             <li v-if="x.lactose"> Contains lactose </li>
-            <li v-if="x.gluten"> Contains gluten </li> 
+            <li v-if="x.gluten"> Contains gluten </li>
+            <input type="checkbox" id="burger" :value="x.name" v-model="orderBurger">
           </ul>
         </div>
-      </div>
+      </div>     
       
-      
-      
-    <!--  <div class="row">
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-      </div>-->
-
-
-
-      
-<!--
-      <div class="wrapper">
-      <div class="box a">
-        <div><h2>Nasty Burger</h2></div>
-        <div> <img width=100% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-h-DSEvwRwh77HkNEWyFZeINOd-6Pa__2vyxquayflbTmhRC-Iw&s"></div>
-        <div>
-          <ul>
-            <li>wuhan imported meat</li>
-            <li>bread</li>
-            <li>cheese</li>
-            <li>onion</li>
-            <li>contains <span id="bold">gluten</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="box b">
-        <div><h2>Nice Burger</h2></div>
-        <div> <img width=80% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HComNXsGM-7olg6V6kOi8P9Y-YE24NM5tq4CDJOrgm4Uh-hR&s"></div>
-        <div>
-          <ul>
-            <li>meat</li>
-            <li>bread</li>
-            <li>cheese</li>
-            <li>tomato</li>         
-          </ul>
-        </div>
-      </div>
-      <div class="box c">
-        <div><h2>Namnam Burger</h2></div>      
-        <div> <img width=80% height=250px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_MeDe_E_ww_fV62nDaOxtFk3P09xGSEUXFEf_lHsyzGBG86x&s"></div>   
-        <div>
-          <ul>
-            <li>meat</li>
-            <li>bread</li>
-            <li>cheese</li>
-            <li>onion</li>
-            <li>tomato</li>             
-            <li>contains <span id="bold">gluten</span> and <span id="bold">lactose</span></li>    
-          </ul>
-        </div>
-      </div> 
-      </div> -->
     </section>
     <section id="contact">
       <h2>Customer Information</h2>
@@ -99,24 +45,24 @@
       <form>
         <h3>Delivery Information:</h3>
         <p>
-          <label for="firstname">Full name</label><br>
-          <input type="text" id="full name" name="fn" required="required" placeholder="First- and last name" />
+          <label for="fullname">Full name</label><br>
+          <input v-model="name" type="text" id="full name"  name="fn" required="required" placeholder="First- and last name" />
         </p>
         <p>
-          <label for="lastname">E-mail</label><br>
-          <input type="email" id="email" name="em" required="required" placeholder="E-mail address" />
+          <label for="email">E-mail</label><br>
+          <input v-model="email" type="email" id="email" name="em" required="required" placeholder="E-mail address" />
         </p>
         <p>
-          <label for="lastname">Street</label><br>
-          <input type="text" id="street" name="s" required="required" placeholder="Street name" />
+          <label for="street">Street</label><br>
+          <input v-model="street" type="text" id="street" name="s" required="required" placeholder="Street name" />
         </p>
         <p>
-          <label for="lastname">House</label><br>
-          <input type="number" id="house" name="h" required="required" placeholder="House number" />
+          <label for="house">House</label><br>
+          <input v-model="house" type="number" id="house" name="h" required="required" placeholder="House number" />
         </p>
         <p>
           <label for="recipient">Payment Options</label><br />
-          <select id="recipient" name="rcp">
+          <select v-model="pay" id="recipient" name="rcp">
             <option>Visa Card</option>
             <option>Swish</option>
             <option>Mastercard</option>
@@ -126,24 +72,26 @@
         <h3>Gender</h3>
         <p>
           
-          <input type="radio" id="female" name="gender" required="required" />
+          <input v-model="picked" type="radio" id="female" value="female" name="gender" required="required" />
           <label for="lastname">Female</label><br>
-          <input type="radio" id="male" name="gender" required="required" />
+          <input v-model="picked" type="radio" id="male" value="male" name="gender" required="required" />
           <label for="lastname">Male</label><br>
-          <input type="radio" id="non-binary" name="gender" required="required" />
+          <input v-model="picked" type="radio" id="non-binary" value="non-binary" name="gender" required="required" />
           <label for="lastname">Non-binary</label><br>
-          <input type="radio" id="undisclosed" name="gender" required="required" checked="checked" />
+          <input v-model="picked" type="radio" id="undisclosed" value="undisclosed" name="gender" required="required" checked="checked" />
           <label for="lastname">Undisclosed</label><br>
           
         </p>
       </form>
       <p>
-        <button type="submit"><img align="left" width=15% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQSlUIwLilpL6MJ3cOT-mYMpcQjtYa_A0SbpA6YsvI0YIta-M&sx" /> <h3>Place my order</h3></button>
+        <button v-on:click="markDone()" id="button" type="submit"><img align="left" width=15% src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQSlUIwLilpL6MJ3cOT-mYMpcQjtYa_A0SbpA6YsvI0YIta-M&sx" /> <h3>Place my order</h3></button>
       </p>
       <hr>
     </section>
+    <span v-if="showOrder">{{ orderBurger }} {{ name }} {{ email }} {{ street }} {{ house }} {{ pay }} {{ picked }} {{ gender }}</span>
     </main>
     <footer> &COPY; 2020 Ella's Burgerhouse inc. </footer>
   </body>
 
 </html>
+

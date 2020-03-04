@@ -59,6 +59,34 @@ for (var x = 0; x<row.length; x++)
 }
 */
 
+ /*   
+let myButton = document.getElementById("button");
+myButton.addEventListener ("click", myFunction);
+
+
+function myFunction () {
+    
+let Name = document.getElementById("full name").value;
+let Email = document.getElementById("email").value;
+let Street = document.getElementById("street").value;
+let House = document.getElementById("house").value;
+let Recipient = document.getElementById("recipient").value;
+var Gender;
+var radios = document.getElementsByName("gender");
+for (var i = 0, length = radios.length; i < length; i++) {
+		if (radios[i].checked) {
+				Gender = radios[i].value;
+				break;
+		}
+}
+    console.log("Button Clicked!");
+    var Info = [Name, Email, Street, House, Recipient, Gender];
+    console.log(Info);
+    
+    
+}
+*/
+
 /*var ids = ["b1", "b2", "b3", "b4", "b5"];
 for (var x = 0; x < row.length; x++)
 {
